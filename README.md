@@ -9,7 +9,6 @@ Criar uma experiência interativa onde o jogador possa explorar o universo de St
 - *HTML5*: Estrutura da aplicação
 - *CSS3*: Estilo e responsividade
 - *JavaScript*: Lógica do jogo
-- *Git & GitHub*: Versionamento e colaboração
 
 ## 🎮 Funcionalidades
 
@@ -31,7 +30,7 @@ Criar uma experiência interativa onde o jogador possa explorar o universo de St
     cd star-wars-rpg
 
 
-3. Abra o arquivo index.html em seu navegador.
+3. Abra o arquivo Site_StarWars em seu navegador.
 
 
 
