@@ -1,0 +1,339 @@
+
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Tela{
+    color: yellow;
+    justify-content: space-between;
+    background-image: url(./Images/Background.jpg);
+    z-index: 0;
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    text-align: center;
+    flex-direction: row;
+    display: block;
+}
+.Selecao{
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 15px; 
+    font-family: Georgia; 
+	padding: 20px 20px;
+    z-index: 1;
+    opacity: 0.9;
+    width: 60%;
+    height: 75%;
+}
+.Logo{
+    position: absolute;
+    width: 320px;
+    height: 240px; 
+    left: 37%;
+    top: 0%;
+}
+
+.Img{
+    width: 75px;
+    height: 100px;
+    object-fit: fill;
+}
+.Tela table{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+}
+.Tela td{
+    font-size: 14px;
+    position: absolute;
+    border:2px solid black; 
+    border: none;
+    position:initial;
+    padding: auto;
+    width: 100px;
+}
+
+.Tela td:hover{
+    border:2px solid yellow; 
+    border-radius: 20px;
+}
+
+.Tela_C{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    background-size: 1350px;
+    z-index: 0;
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.Tela_C td:hover{
+    background-color: rgba(88, 88, 88,0.5);
+    border-radius: 20px; 
+}
+.Tela_C td:active{
+    background-color: rgb(8, 8, 8);
+}
+
+.Config_P{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.Config_Comp{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+#img_P{
+    height: 65%;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    z-index: 0;
+    size:  600px 600px;
+}
+
+
+#img_Comp{
+    position: absolute;
+    height: 65%;
+    animation-delay: 0s;
+    animation-iteration-count: none;
+    animation-duration: 2s;
+    bottom: 2%;
+    right: 5%;
+    z-index: 0;
+}
+
+.Status_C{
+    position: absolute;
+    top: 2%;
+    right: 16px;
+    width: 95%;
+    height: 80px;
+    text-align: center;
+    background: linear-gradient(150deg, rgba(176,176,176,0) 0%, rgb(255, 0, 0) 50%, rgba(149,149,149,0) 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.Status_P{
+    position: absolute;
+    bottom: 2%;
+    right: 16px;
+    width: 95%;
+    height: 80px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: rgb(176,176,176);
+    background: linear-gradient(150deg, rgba(176,176,176,0) 0%, rgb(83, 10, 255) 50%, rgba(149,149,149,0) 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
+.Prologo{
+    margin: 50% 0 0 0;
+    display: none;
+    background-image: url('./Images/Background.jpg');
+    width: 100vw;
+    height: 100vh;
+    color: yellow;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    perspective: 450px;
+    margin: 0 auto;
+}
+.long{
+    top: 200px;
+    position: relative;
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(0, 170, 170);
+    text-align: center;
+    animation: longe 10s linear normal;
+}
+.Prologo p {
+    top: 100%;
+    text-align:justify;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    animation: scroll 120s linear forwards;
+    animation-delay: 10s;
+    left: 12.5%;
+    width: 75%;
+
+}
+@keyframes scroll{
+    from{top:100%; transform: translateZ(0px) rotateX(20deg);}
+    to{top: -2000px; transform: translateZ(-2000px) rotateX(21deg);}
+}
+@keyframes longe {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.button{
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    z-index: 9;
+}
+
+.Menu{
+    font: helvetica;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Images/Background2.jpg');
+    background-size: 1380px 740px;
+    text-align: center;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+.Menu_C{
+    font-size: 14px;
+    width: 400px;
+    height: 95%;
+    color: rgb(255, 230, 0);
+    border-radius: 10px;
+}
+.Menu_C table{
+    width: 100%;
+}
+.Menu_C td{
+    padding: auto;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(83, 83, 83, 0.5);
+}
+.Menu_C td:hover{
+    border: 3px solid rgb(2, 151, 151, 0.5); 
+}
+.Menu_C h1{
+    background-color: rgba(83, 83, 83,0.5);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.pop{
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(22, 22, 22) 100%);
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(0, 145, 145);
+}
+.pop button{
+    font-size: 14px;
+    background: black;
+    border-radius: 10px;
+    color:rgb(0, 145, 145);
+    width: 90%;
+    height: 50px;
+    margin: 10px 10px;
+}
+.Save{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1px solid gray;
+    width: 35px;
+    height: 35px;
+}
+.login{
+    display: none;
+    padding: 1em 1em;
+    color: rgb(255, 255, 0);
+    border: 1px solid  rgb(0, 145, 145);
+    border-radius: 10px;
+    background:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(22, 22, 22) 100%); 
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 25%;
+    height: 10;
+    z-index: 10;
+}
+.login img{
+    width: 25%;
+    height: 50%;
+}
+
+.login table{
+    font-size: 14px;
+    background: black;
+    border-radius: 10px;
+    color:rgb(0, 145, 145);
+    width: 90%;
+    height: 50px;
+    margin: 10px 10px;
+}
+.login button{
+    font-size: 14px;
+    background: black;
+    border-radius: 10px;
+    color:rgb(0, 145, 145);
+    width: 25%;
+    height: 20px;
+    margin: 10px 10px;
+}
+.X{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}

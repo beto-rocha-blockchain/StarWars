@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style_StarWars.css">
+    <link rel="stylesheet" type="text/css" href="Style_Adapter.css">
+    <title>StarWars</title>
+</head>
+<body>
+        <div class="login">
+            <button class="X" onclick="b()">X</button>
+            <div class="slot">
+                <table>
+                        <img id="1img" src="">
+                        <tr>                
+                            <td id="at1">Nome:</td>
+                        </tr>
+                        <tr>
+                            <td id="at2">Atak:</td>
+                            <td id="at3">Def:</td>
+                        </tr>
+                        <tr>
+                            <td id="at4">Stam:</td>
+                            <td id="at5">life:</td>
+                        </tr>
+                        <tr>
+                            <button onclick="Save(1)">Save</button> <button onclick="login(1)">Login</button>
+                        </tr>
+                </table>
+                <table>
+                    <img id="2img" src="">
+                    <tr>                
+                        <td id="bat1">Nome:</td>
+                    </tr>
+                    <tr>
+                        <td id="bat2">Atak:</td>
+                        <td id="bat3">Def:</td>
+                    </tr>
+                    <tr>
+                        <td id="bat4">Stam:</td>
+                        <td id="bat5">life:</td>
+                    </tr>
+                    <tr>
+                        <button onclick="Save(2)">Save</button> <button onclick="login(2)">Login</button>
+                    </tr>
+            </table>
+
+            </div>
+        </div>
+    <div class="Tela">
+        <div class="Save">
+            <img src="./Images/cartao.png" alt="Slot" style="height: 90%; width: 90%; bottom: 10px;" onclick="a()">
+        </div>
+        <div class="Selecao">
+            <div>
+            <img class="Logo" src="./Images/Star_Wars_Logo.svg.png">
+            </div>
+            <div>
+            <table>
+            <tr>
+                <td onclick=" Camapain(1)"> <img class="Img" src="./Images/Luke.png"> <h2>Luke</h2> 
+                    <p>Luke Skywalker é o protagonista da trilogia original da série Star Wars</p> 
+                    <div class="Status"> ATK = 18; DEF = 15;<br> LIFE = 27; STAM = 20; </div>
+                </td>
+                <td onclick=" Camapain(2)"> <img class="Img" src="./Images/Han-Solo.png"> <h2>Han-Solo</h2> 
+                    <p>Han Solo é um mercenário, nativo do planeta Corellia</p> 
+                    <div class="Status"> ATK = 22; DEF=15;<br> LIFE=23; STAM=27; </div>
+                </td>
+                <td onclick=" Camapain(3)"> <img class="Img" src="./Images/Anakin.png"> <h2>Anakin</h2> 
+                    <p>E o antagonista central da trilogia original</p> 
+                    <div class="Status"> ATK = 20; DEF=15; LIFE=23; STAM=20; </div>
+                </td>
+                <td onclick=" Camapain(4)"> <img class="Img" src="./Images/C3PO.png"> <h2>Droides</h2> 
+                    <p> É um "droide de protocolo" fluente em 6 milhões de meios de comunicação.</p>
+                    <div class="Status"> ATK = 20; DEF=15;<br> LIFE=20; STAM=100; </div> 
+                </td>
+                <td onclick=" Camapain(5)"> <img class="Img" src="./Images/Mandaloriano.png"> <h2>Mandalo-riano</h2> 
+                    <p>É órfão desde criança, após adotado, cresceu sob os costumes da cultura mandaloriana tornando-se um caçador de recompensas e guerreiro.</p> 
+                    <div class="Status"> ATK = 18; DEF=15;<br> LIFE=20; STAM=17; </div>
+                </td> 
+                <td onclick=" Camapain(6)"> <img class="Img" src="./Images/Stormtrooper.png"> <h2>Storm Trooper</h2> 
+                    <p>E burro e Atira Muito Mal, e pau Mandado das Forças Imperias</p> 
+                    <div class="Status"> ATK = 15; DEF=17;<br> LIFE=30; STAM=18; </div>
+                </td>
+            </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="Tela_C" id="Tela_C">
+        <div class="Config_P"> 
+            <div>
+                <img id="img_P" src="">
+            </div>
+            <table class="Status_P">
+                <tr><td colspan="4" id="nome">Player</td>  </tr>
+                <tr> 
+                    <td id="Life_P"> Life: </td> <td id="Defesa_P"> Defesa: </td>
+                    <td id="Atak_P"> Atak: </td> <td id="Stam_P"> Stam: </td>
+                </tr>
+                <tr> 
+                    <td onclick="Batle('Atk')">Ataque</td> <td onclick="Batle('Wait')">Descançar</td> 
+                    <td onclick="Batle('Spec')">Especial</td><td onclick="Batle('Surrender')">Render-se</td>
+               </tr>
+            </table>
+        </div>
+        <div class="Config_Comp"> 
+            <div>
+                <img id="img_Comp" src="">
+            </div>
+            <table  class="Status_C">
+                <tr><td colspan="4"> Adversario </td>  </tr>
+                <tr> <td id="Life_Comp"> Life: </td> <td id="Defesa_Comp"> Defesa: </td></tr>
+                <tr> <td id="Atak_Comp"> Atak: </td> <td id="Stam_Comp"> Stam: </td></tr>
+            </table>
+        </div>  
+        <div class="Prologo">
+            <button onclick="Skip()" class="button"> Skip </button>
+                <h1 class="long">Há muito tempo, em uma galáxia muito, muito distante…</h1>
+                <p style="font-size: 40px; text-align: center;" id="Titulo"> Star Wars Episodio VI</p>
+                <p style="font-size: 20px; " id="Texto">  </p>
+        </div> 
+    </div>
+    <div class="Menu">
+        <div class="Save">
+            <img src="./Images/cartao.png" alt="Slot" style="height: 90%; width: 90%; bottom: 10px;" onclick="a()">
+        </div>
+        <div class="Menu_C">
+            <h1> Menu De Seleção </h1>
+            <table>
+                <tr><td class="1" onclick="verifica(6)"> Espaço Profundo </td> <td class="2" onclick="verifica(2)"> Part II </td> <td class="3" onclick="verifica(3)"> PartIII </td></tr>
+                <tr><td class="4" onclick="verifica(4)"> PartIV </td> <td class="5" onclick="verifica(5)"> PartV </td> <td class="7" onclick="verifica(7)" style="display: none; background-color: black;"> Creditos </td>  </tr>
+            </table>
+            <h1> Itens Bonus</h1>
+            <table style="color: rgb(63, 0, 134); font-size: 25px;">
+                <tr><td onclick="bonus(1)" style="background-image: url(./Images/Ataque.png);"></td> <td onclick="bonus(2)" style="background-image: url(./Images/life.jpg);"></td> <td onclick="bonus(3)" style="background-image: url(./Images/stam.png);"></td></tr>
+            </table>
+            
+        </div>
+    </div>
+    <div class="pop">
+        <h1> Puzzle</h1>
+        <p id="Question"> Quem e o filho de Darth Vader</p>
+        <button id="b1" onclick="VerificaPuzzle(1)">1. Rey</button> <button id="b2" onclick="VerificaPuzzle(2)">2. BenSolo</button> <button id="b3" onclick="VerificaPuzzle(3)">3. Luke Shywalker</button>
+        <button id="b4" onclick="VerificaPuzzle(4)">4. Han-Solo</button> <button id="b5" onclick="VerificaPuzzle(5)"> 5. Nenhuma Das Anteriores</button>
+    </div>
+<audio controls style="display: none;" id="audio0">
+    <source src="./SFX/Final.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio1">
+    <source src="./SFX/Anakin.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio2">
+    <source src="./SFX/Base.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio3">
+    <source src="./SFX/BarMusic.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio4">
+    <source src="./SFX/Intro.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio5">
+    <source src="./SFX/Tatooine.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio6">
+    <source src="./SFX/ThemeDarth.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="audio7">
+    <source src="./SFX/windu.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="tiro">
+    <source src="./SFX/Tiro.mp3" type="audio/mp3">
+</audio>
+<audio controls style="display: none;" id="sabre">
+    <source src="./SFX/Sabre.mp3" type="audio/mp3">
+</audio>
+
+<video>
+
+</video>
+
+
+
+
+</body>
+<script type="text/javascript" src="Campain_StarWars.js" ></script>
+</html>
