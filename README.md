@@ -38,7 +38,7 @@ Criar uma experiência interativa onde o jogador possa explorar o universo de St
 
 Durante o projeto, cada aluno contribuiu com uma parte do sistema, como design de interface, criação de personagens, efeitos de som, lógica de batalha e organização do código. O projeto serviu como uma excelente forma de consolidar os conceitos vistos em aula.
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 ![Screenshot do jogo](assets/screenshot1.png)
 
