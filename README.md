@@ -1,4 +1,8 @@
-conhecimentos de programação, lógica de jogos e desenvolvimento web.
+# 🕹️ Star Wars Puzzle Quiz RPG
+
+![Darth Vader](assets/gif-darth-vader.gif)
+ 
+Um jogo de RPG interativo ambientado no universo Star Wars, que combina batalhas por turnos com desafios de perguntas estilo quiz.
 
 ## 🎯 Objetivo
 
